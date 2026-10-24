@@ -4,8 +4,8 @@
 This site is hosted on GitHub Pages and deploys automatically from the `main` branch.
 
 **Live URLs:**
-- Main site: https://topshopnation.com
-- NestPlan: https://topshopnation.com/nestplan/
+- Main site: https://coreforgeapps.com
+- NestPlan: https://coreforgeapps.com/nestplan/
 
 ## How to Update
 
