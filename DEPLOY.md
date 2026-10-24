@@ -18,8 +18,8 @@ This site is hosted on GitHub Pages and deploys automatically from the `main` br
 
 ### Via Git
 ```bash
-git clone https://github.com/topshopnation/topshopnation.github.io.git
-cd topshopnation.github.io
+git clone https://github.com/coreforgeapps/coreforgeapps.github.io.git
+cd coreforgeapps.github.io
 # Make changes
 git add .
 git commit -m "Description of changes"
