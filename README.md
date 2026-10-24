@@ -2,19 +2,19 @@
 
 Quality iOS apps for everyday life.
 
-**Live Site:** https://topshopnation.com
+**Live Site:** https://coreforgeapps.com
 
 ## Apps
 
 ### NestPlan
 Professional retirement planning tool with Monte Carlo simulation and tax optimization.
 
-**Live Site:** https://topshopnation.com/nestplan/
+**Live Site:** https://coreforgeapps.com/nestplan/
 
 ### WeatherBolt (formerly HarborCast)
 Live radar, lightning alerts, and hourly and 7-day forecasts, with optional Water tools for tides and marine conditions.
 
-**Live Site:** https://topshopnation.com/weatherbolt/
+**Live Site:** https://coreforgeapps.com/weatherbolt/
 
 ## Privacy
 
@@ -23,8 +23,8 @@ All apps are built with privacy as a priority. Your data stays on your device. S
 ## Support
 
 Need help? Visit our support pages:
-- [NestPlan Support](https://topshopnation.com/nestplan/support.html)
-- [WeatherBolt Support](https://topshopnation.com/weatherbolt/support.html)
+- [NestPlan Support](https://coreforgeapps.com/nestplan/support.html)
+- [WeatherBolt Support](https://coreforgeapps.com/weatherbolt/support.html)
 
 ---
 
