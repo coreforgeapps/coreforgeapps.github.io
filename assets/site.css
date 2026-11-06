@@ -1,0 +1,200 @@
+/* Shared styles for the CoreForge site navigation, footer and long-form pages. */
+
+.cf-nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 18px;
+    width: calc(100% - 32px);
+    max-width: 960px;
+    margin: 16px auto 0;
+    padding: 12px 18px;
+    background: rgba(10, 15, 30, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.4;
+}
+.cf-nav .cf-brand {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+.cf-nav .cf-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+}
+.cf-nav .cf-nav-links a {
+    color: #b8c2d6;
+    text-decoration: none;
+    padding: 2px 0;
+    border-bottom: 2px solid transparent;
+}
+.cf-nav .cf-nav-links a:hover,
+.cf-nav .cf-nav-links a:focus {
+    color: #fff;
+    border-bottom-color: #f2a71b;
+}
+.cf-nav .cf-nav-links a[aria-current="page"] {
+    color: #fff;
+    border-bottom-color: #f2a71b;
+}
+
+.cf-footer {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+    max-width: 960px;
+    margin: 40px auto 24px;
+    padding: 22px 18px;
+    background: rgba(10, 15, 30, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #8a94a8;
+}
+.cf-footer .cf-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 20px;
+    margin-bottom: 10px;
+}
+.cf-footer a {
+    color: #c3cde0;
+    text-decoration: none;
+}
+.cf-footer a:hover,
+.cf-footer a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+.cf-footer p {
+    margin: 0;
+    color: #8a94a8;
+}
+
+.cf-nav + .container { margin-top: 24px; }
+
+/* Long-form pages: guides, legal pages, contact */
+body.cf {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    color: #ccc;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body.cf *, body.cf *::before, body.cf *::after { box-sizing: border-box; }
+body.cf main {
+    width: 100%;
+    max-width: 720px;
+    padding: 40px 20px 0;
+}
+body.cf .cf-footer { margin-top: 56px; }
+body.cf h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 10px;
+}
+body.cf h2 {
+    color: #fff;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    margin: 40px 0 14px;
+}
+body.cf h3 {
+    color: #f2a71b;
+    font-size: 1.08rem;
+    margin: 28px 0 10px;
+}
+body.cf p { margin: 0 0 16px; }
+body.cf ul, body.cf ol { margin: 0 0 18px 24px; }
+body.cf li { margin-bottom: 8px; }
+body.cf a { color: #4da6ff; }
+body.cf a:hover { color: #7dbfff; }
+body.cf strong { color: #fff; }
+body.cf code {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 0.92em;
+    word-break: break-word;
+}
+body.cf .lede { color: #9aa5ba; font-size: 1.08rem; margin-bottom: 8px; }
+body.cf .meta { color: #7e889c; font-size: 0.88rem; margin-bottom: 30px; }
+body.cf .crumbs { font-size: 0.86rem; color: #7e889c; margin-bottom: 22px; }
+body.cf .crumbs a { color: #9aa5ba; text-decoration: none; }
+body.cf .crumbs a:hover { color: #fff; text-decoration: underline; }
+body.cf .callout {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #f2a71b;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 26px 0;
+}
+body.cf .callout p:last-child { margin-bottom: 0; }
+body.cf .callout h2, body.cf .callout h3 { margin-top: 0; }
+body.cf .cta {
+    display: inline-block;
+    background: #f2a71b;
+    color: #1a1a2e;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    margin-top: 4px;
+}
+body.cf a.cta { color: #1a1a2e; }
+body.cf a.cta:hover { background: #ffc04d; color: #1a1a2e; }
+body.cf .related {
+    margin-top: 50px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+body.cf .related h2 { margin-top: 0; font-size: 1.15rem; }
+body.cf .related ul { list-style: none; margin-left: 0; padding: 0; }
+body.cf .disclaimer { color: #8a94a8; font-size: 0.88rem; margin-top: 30px; }
+
+body.cf .guide-section { margin-bottom: 14px; }
+body.cf .guide-list {
+    list-style: none;
+    margin: 0 0 8px;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+}
+body.cf .guide-list li {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 18px 22px;
+}
+body.cf .guide-list li:hover { background: rgba(255, 255, 255, 0.08); }
+body.cf .guide-list a.guide-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.06rem;
+    text-decoration: none;
+}
+body.cf .guide-list a.guide-title:hover { color: #4da6ff; }
+body.cf .guide-list p { margin: 6px 0 0; color: #aab3c5; font-size: 0.96rem; line-height: 1.6; }
+
+@media (max-width: 600px) {
+    body.cf h1 { font-size: 1.7rem; }
+    body.cf main { padding-top: 28px; }
+    .cf-nav { padding: 10px 14px; }
+}
