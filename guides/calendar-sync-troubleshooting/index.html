@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Calendar Not Updating? A Troubleshooting Guide | CoreForge</title>
+    <meta name="description" content="Fix football calendars that are missing games, showing wrong times, duplicating or not updating in Apple Calendar, Google Calendar and Outlook.">
+    <link rel="canonical" href="https://coreforgeapps.com/guides/calendar-sync-troubleshooting/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="CoreForge Apps">
+    <meta property="og:title" content="Football Calendar Not Updating? A Troubleshooting Guide | CoreForge">
+    <meta property="og:description" content="Fix football calendars that are missing games, showing wrong times, duplicating or not updating in Apple Calendar, Google Calendar and Outlook.">
+    <meta property="og:url" content="https://coreforgeapps.com/guides/calendar-sync-troubleshooting/">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6903279016707290" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZTM3R5KBR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QZTM3R5KBR');
+    </script>
+    <link rel="stylesheet" href="/assets/site.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Football Calendar Not Updating? A Troubleshooting Guide", "description": "Fix football calendars that are missing games, showing wrong times, duplicating or not updating in Apple Calendar, Google Calendar and Outlook.", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": "https://coreforgeapps.com/guides/calendar-sync-troubleshooting/", "author": {"@type": "Organization", "name": "CoreForge LLC"}, "publisher": {"@type": "Organization", "name": "CoreForge LLC", "url": "https://coreforgeapps.com/"}}</script>
+</head>
+<body class="cf">
+    <nav class="cf-nav" aria-label="Main">
+        <a class="cf-brand" href="/">CoreForge</a>
+        <div class="cf-nav-links"><a href="/">Home</a><a href="/guides/" aria-current="page">Guides</a><a href="/nestplan/">NestPlan</a><a href="/weatherbolt/">WeatherBolt</a><a href="https://cfb.coreforgeapps.com">CFB Calendars</a><a href="https://nfl.coreforgeapps.com">NFL Calendars</a><a href="/about/">About</a></div>
+    </nav>
+    <main>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; Calendar guides</nav>
+        <article>
+        <h1>Football Calendar Not Updating? A Troubleshooting Guide</h1>
+        <p class="meta">Calendar guides &middot; By CoreForge LLC &middot; Published November 5, 2026</p>
+<p class="lede">Subscribed calendars are reliable once they are set up, but they have a few quirks that look like bugs. Nearly every problem comes down to one of five causes: the calendar app is slow to refresh, the subscription was added as a one time copy, the time zone is different from what you expected, two subscriptions overlap, or the link was copied incorrectly. This guide goes symptom by symptom, from the most common to the least.</p>
+
+<h2>First, understand how updates reach you</h2>
+<p>The <a href="https://cfb.coreforgeapps.com">College Football Calendars</a> and <a href="https://nfl.coreforgeapps.com">NFL Calendars</a> rebuild their schedule and score data every night. The feed also tells calendar apps to check back about once a day. Your calendar app then decides when it will actually fetch the feed, and each one has its own rhythm. Apple Calendar lets you set an interval on a Mac. Google Calendar and Outlook decide for themselves and do not offer a refresh button.</p>
+<p>The result is a chain with three links: the data updates overnight, the feed updates with it, and your app picks it up sometime afterward. A change made by the league or a network today may not show in your calendar until tomorrow. That delay is the most common reason people think a calendar is stuck, and it usually resolves without any action.</p>
+
+<h2>Symptom: no games appear at all</h2>
+<ol>
+<li><strong>Check the calendar is switched on.</strong> In Apple Calendar, open the Calendars list and look for a check mark. In Google Calendar, make sure the calendar is ticked in the left column and enabled in your phone app's settings. In Outlook, make sure the calendar is ticked in the calendar list.</li>
+<li><strong>Look at the right dates.</strong> Navigate to a Saturday in the fall for college football or a Sunday for the NFL. If you are looking at a week in the off season, an empty view is correct.</li>
+<li><strong>Wait a few minutes after subscribing.</strong> Google and Outlook fetch the feed in the background, and a brand new subscription can look empty at first.</li>
+<li><strong>Re check the link.</strong> A link with a missing character, a stray space or the page address instead of the feed address will fail quietly. Copy it again from the calendar site. A working feed address ends with <code>.ics</code>.</li>
+<li><strong>Try the other link style.</strong> If a link starting with <code>webcal://</code> is rejected, use the same address starting with <code>https://</code>, and the other way around.</li>
+</ol>
+
+<h2>Symptom: games are there, but the times are wrong</h2>
+<p>The feeds store each game at a fixed universal time. Your calendar app converts it to your own time zone. If a game appears three hours early or late, the usual cause is a time zone setting in the app or the device, and not the feed.</p>
+<ul>
+<li>On a Mac or iPhone, check the time zone in the system settings and whether the Calendar app has a time zone override switched on.</li>
+<li>In Google Calendar, open Settings, then General, and check the primary time zone.</li>
+<li>In Outlook, check the time zone in the calendar settings and in the operating system.</li>
+</ul>
+<p>If you recently traveled, also check whether your phone is set to adjust the time zone automatically. Comparing one game against the official source is a good test: if the offset is a whole number of hours and matches the difference between two time zones, it is a settings issue.</p>
+<p>If the time is wrong by a different amount, or the game was moved, remember that kickoff times sometimes change late. The nightly refresh then needs to reach your app. Check the calendar site itself for the latest time.</p>
+
+<h2>Symptom: scores or changes are not showing</h2>
+<p>Final scores appear in the event title and description after the nightly data refresh, and then after your app's next check. If you finished watching a game an hour ago, the score is not in your calendar yet, and that is expected. Look again the next day.</p>
+<p>If days have passed and still nothing changed, work through these steps:</p>
+<ol>
+<li><strong>Confirm it is a subscription, not an import.</strong> If you pressed Download .ics and opened the file, your calendar holds a frozen copy. Delete that calendar and subscribe with the Subscribe link instead.</li>
+<li><strong>Check the last refresh time on the site.</strong> The calendar sites show when they last refreshed, in a note near the bottom of the page. If that time is recent, the problem is on your side.</li>
+<li><strong>Nudge the app.</strong> On a Mac, open the calendar's info and set auto refresh to every day, or use the refresh command in the Calendar menu. On an iPhone, open and close the Calendar app and make sure Low Power Mode is off. For Google Calendar and Outlook, give it a day.</li>
+<li><strong>As a last step, remove and add again.</strong> Delete the subscription and add it fresh. This clears any stale cache, though it may look empty for a short while.</li>
+</ol>
+
+<h2>Symptom: duplicate games</h2>
+<p>Duplicates have three typical causes.</p>
+<ul>
+<li><strong>Imported and subscribed.</strong> You downloaded the file once and later subscribed, so the games exist twice. Delete the imported copy.</li>
+<li><strong>Overlapping feeds.</strong> A team calendar and a conference calendar both contain that team's games. Hide or delete one of them.</li>
+<li><strong>Subscribed in two places that sync.</strong> You added the same feed on a Mac with iCloud storage and also on your iPhone in Settings, so your phone shows it twice. Remove one of the two.</li>
+</ul>
+<p>Each subscription is its own calendar, so duplicates are only a matter of cleaning up which calendars you have. They do not mean something broke.</p>
+
+<h2>Symptom: the calendar disappeared</h2>
+<p>A calendar can vanish for a few reasons. You may have unticked it by accident, the account that holds it may have signed out, or the subscription may have been deleted. Check the calendar list first. On an iPhone, look in the accounts section of Settings for a subscribed calendars entry. On a Mac, check whether you chose <strong>On My Mac</strong> instead of iCloud, in which case it will not appear on your other devices. If the calendar is truly gone, subscribe again from the calendar site.</p>
+<p>Also be aware that a work or school Outlook account may have a policy that removes or blocks internet calendars. If your football calendar is the only one that behaves that way, ask your administrator or use a personal account.</p>
+
+<h2>Symptom: a team or conference is missing from the list</h2>
+<p>The lists on the calendar sites follow the data source they use. A smaller school or a team that changed conferences may be listed in a different group than you expect. Try the All FBS calendar for college football or the All NFL calendar for the league, then use the team picker to find the exact team name. Some names are abbreviated, such as "Ga. Southern" or "Fla. Atlantic", so scroll the whole list before concluding that a team is missing.</p>
+
+<h2>Symptom: notifications do not fire</h2>
+<p>The feeds do not include reminders. Alerts come from your own settings, so if you expected a buzz before kickoff, you need to set that up in your calendar app. Check the alert and notification options for that calendar, and also confirm that the Calendar app is allowed to send notifications in your device settings.</p>
+
+<h2>When to contact us</h2>
+<p>If you have followed the steps above and a feed still looks wrong, such as a game that is missing from the calendar site itself, or a feed that returns an error, send us the details through the <a href="/contact/">contact page</a>. Tell us which calendar you subscribed to, which app you use, what you expected to see and what you saw instead. Screenshots help. We cannot promise an instant reply, but the details let us check the feed itself.</p>
+
+<h2>A short routine that prevents most problems</h2>
+<ul>
+<li>Always subscribe instead of downloading the file.</li>
+<li>Pick one calendar per team so you do not create overlaps.</li>
+<li>Check your time zone setting before you doubt a time.</li>
+<li>Allow a day for changes to arrive.</li>
+<li>Keep notes on which devices have the subscription, so you can clean up duplicates quickly.</li>
+</ul>
+<p>Need setup steps? See the guides for <a href="/guides/subscribe-football-calendar-iphone/">iPhone and iPad</a>, <a href="/guides/subscribe-football-calendar-mac/">Mac</a>, <a href="/guides/subscribe-football-calendar-google/">Google Calendar</a> or <a href="/guides/subscribe-football-calendar-outlook/">Outlook</a>.</p>
+
+        <section class="related">
+        <h2>Keep reading</h2>
+<ul class="guide-list">
+<li><a class="guide-title" href="/guides/subscribe-football-calendar-iphone/">Add a College Football or NFL Calendar to Your iPhone</a><p>Two ways to subscribe to a football calendar on iPhone and iPad, plus how to tidy it up and remove it later.</p></li>
+<li><a class="guide-title" href="/guides/subscribe-football-calendar-google/">Add a College Football or NFL Calendar to Google Calendar</a><p>Add a football feed to Google Calendar on the web, then get it onto your phone, with realistic expectations about update speed.</p></li>
+<li><a class="guide-title" href="/guides/subscribe-football-calendar-outlook/">Add a College Football or NFL Calendar to Outlook</a><p>Subscribe to a football feed in Outlook on the web and the desktop app, with notes on update timing and removal.</p></li>
+</ul>
+        </section>
+        </article>
+    </main>
+    <div class="cf-footer">
+        <nav class="cf-footer-links" aria-label="Footer"><a href="/privacy/">Privacy Policy</a><a href="/contact/">Contact</a><a href="/terms/">Terms of Use</a><a href="/guides/">Guides</a><a href="/about/">About</a></nav>
+        <p>&copy; 2026 CoreForge LLC &middot; 30 N Gould St #N, Sheridan, WY 82801, US &middot; <a href="mailto:team@coreforgeapps.com">team@coreforgeapps.com</a></p>
+    </div>
+</body>
+</html>

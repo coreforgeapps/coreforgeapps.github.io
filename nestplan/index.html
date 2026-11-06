@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NestPlan - Retirement Calculator</title>
   <meta name="description" content="NestPlan - Know exactly when you can retire and what you'll have when you do. Monte Carlo retirement projections built around your real numbers.">
+    <link rel="canonical" href="https://coreforgeapps.com/nestplan/">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZTM3R5KBR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -113,8 +114,13 @@
       margin-bottom: 14px;
     }
   </style>
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+    <nav class="cf-nav" aria-label="Main">
+        <a class="cf-brand" href="/">CoreForge</a>
+        <div class="cf-nav-links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/nestplan/" aria-current="page">NestPlan</a><a href="/weatherbolt/">WeatherBolt</a><a href="https://cfb.coreforgeapps.com">CFB Calendars</a><a href="https://nfl.coreforgeapps.com">NFL Calendars</a><a href="/about/">About</a></div>
+    </nav>
   <div class="container">
     <div class="logo"><img src="/images/nestplan-icon.png" alt="NestPlan"></div>
     <h1><span class="accent">NestPlan</span> Retirement</h1>
@@ -151,10 +157,13 @@
       <p>When you retire, NestPlan draws down accounts in a specific order rather than pulling evenly from everything: taxable accounts first, then tax-deferred accounts, with Roth accounts held back for last since they grow tax-free and aren't subject to Required Minimum Distributions. Once you hit RMD age, NestPlan calculates the mandatory withdrawal from tax-deferred accounts automatically and folds it into your income for that year, so the tax picture stays realistic instead of assuming you can choose to skip it. <a href="/nestplan/withdrawal-order/" style="color:#0EA5E9;">More on why this order matters &rarr;</a></p>
 
       <h2>What Monte Carlo simulation actually shows you</h2>
-      <p>A single retirement projection assumes one fixed rate of return every year, which isn't how markets behave. NestPlan's Monte Carlo mode runs 1,000 separate simulations, each with a different randomized sequence of annual returns drawn from historical market volatility. Some sequences front-load bad years right as you retire (sequence-of-returns risk, one of the biggest threats to a retirement plan), others don't. The result isn't one number, it's a distribution: the percentage of those 1,000 runs where your money lasted through your projected lifespan, so you can see not just an average outcome but how much the plan depends on getting lucky with market timing. <a href="/nestplan/monte-carlo/" style="color:#0EA5E9;">What a 1,000-run simulation actually tells you &rarr;</a></p>
+      <p>A single retirement projection assumes one fixed rate of return every year, which isn't how markets behave. NestPlan's Monte Carlo mode runs 1,000 separate simulations, each with a different randomized sequence of annual returns drawn from historical market volatility. Some sequences front-load bad years right as you retire (sequence-of-returns risk, one of the biggest threats to a retirement plan), others don't. The result isn't one number, it's a distribution: the percentage of those 1,000 runs where your money lasted through your projected lifespan, so you get not just an average outcome but how much the plan depends on getting lucky with market timing. <a href="/nestplan/monte-carlo/" style="color:#0EA5E9;">What a 1,000-run simulation actually tells you &rarr;</a></p>
 
       <h2>The what-if sandbox</h2>
       <p>Retirement age is rarely a single fixed decision, it's a tradeoff between working longer and having more time. The sandbox in NestPlan lets you build two or three full scenarios side by side, retiring at 60 versus 65 versus 70, or with a different withdrawal rate, and compare the resulting balance curves and success probabilities directly instead of re-running the calculator from scratch for every "what if."</p>
+
+      <h2>Guides</h2>
+      <p>New to retirement calculators? <a href="/guides/nestplan-getting-started/" style="color:#0EA5E9;">Getting Started with NestPlan</a> covers what to gather before your first projection, and <a href="/guides/nestplan-compare-retirement-ages/" style="color:#0EA5E9;">comparing retirement ages with the what if sandbox</a> shows how to build fair scenarios. More are on the <a href="/guides/" style="color:#0EA5E9;">guides page</a>.</p>
     </div>
 
     <div class="links">
@@ -167,5 +176,9 @@
       <p>&copy; 2026 CoreForge LLC. All rights reserved.</p>
     </div>
   </div>
+    <div class="cf-footer">
+        <nav class="cf-footer-links" aria-label="Footer"><a href="/privacy/">Privacy Policy</a><a href="/contact/">Contact</a><a href="/terms/">Terms of Use</a><a href="/guides/">Guides</a><a href="/about/">About</a></nav>
+        <p>&copy; 2026 CoreForge LLC &middot; 30 N Gould St #N, Sheridan, WY 82801, US &middot; <a href="mailto:team@coreforgeapps.com">team@coreforgeapps.com</a></p>
+    </div>
 </body>
 </html>
